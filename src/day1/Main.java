@@ -24,10 +24,11 @@ public class Main {
         }
     }
 
+
     public static void partTwo() {
-        for (int i = 0; i < numbers.length - 2; ++i) {
-            for (int j = i + 1; j < numbers.length - 1; ++j) {
-                for (int k = j + 1; k < numbers.length; ++k) {
+        for (int i = 0; i < numbers.length - 2; ++i) { // for i in range(len(numbers) - 2)
+            for (int j = i + 1; j < numbers.length - 1; ++j) {// for j in range(i + 1, len(numbers) - 1)
+                for (int k = j + 1; k < numbers.length; ++k) { // for k in range(j + 1, len(numbers))
                     if (numbers[i] + numbers[j] + numbers[k] == 2020) {
                         System.out.println(numbers[i] * numbers[j] * numbers[k]);
                     }
