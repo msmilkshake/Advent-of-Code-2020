@@ -8,7 +8,7 @@ import java.util.Map;
 
 
 public class Main {
-    private static String[] lines;
+    public static String[] lines;
 
     static {
         lines = Util.getInput("in/day5.txt");
